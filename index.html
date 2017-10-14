@@ -1,0 +1,133 @@
+<html>
+    <head>
+        <title>Linkinator</title>
+        <style>
+            input {
+                font-size: 15px;
+                margin-top: 10px;
+                text-align:center;
+                border: none;
+                font-weight:normal;
+                font-family: sans-serif;
+                width:100%;
+            }
+
+            input, button {
+                outline-style:none;
+                box-shadow:none;
+                outline:none !important;
+            }
+            
+            .link {
+                font-size: 90px;
+                margin-top: 150px;
+                margin-bottom: 100px;
+                text-align:center;
+                border: none;
+                font-weight:bold;
+                font-family: sans-serif;
+                width:100%;
+            }
+
+            .link span {
+                color: #999;
+            }
+
+            input:focus {
+                border-bottom: 1px solid #BABABA;
+            }
+
+            .noSelect {
+                -webkit-touch-callout: none;
+                -webkit-user-select: none;
+                -khtml-user-select: none;
+                -moz-user-select: none;
+                -ms-user-select: none;
+                user-select: none;
+            }
+
+            #add {
+                border:none;
+                font-size: 50px;
+                color: rgb(181, 181, 181);
+                display:block;
+                width: 100%;
+                background:none;
+                text-align: center;
+            }
+
+            #history {
+                width:100%;
+                display:block;
+                margin:0;
+                padding:0;
+                color:#999;
+                font-size: 20pt;
+                text-align:center;
+                font-family: sans-serif;
+            }
+
+            #history li {
+                list-style: none;
+                padding:0;
+                margin: 0;
+            }
+
+            #history li:nth-child(1) {
+                font-size:140%;
+                color: rgb(108, 108, 108);
+
+            }
+
+        </style>
+    </head>
+    <body>
+        <h1><input class="noSelect" id="link" type="text"/></h1>
+        <div id="linkdiv" class="link"></div>
+        <ul id="history"></ul>
+
+        <script defer>
+            var input = document.getElementById('link')
+            var div = document.getElementById('linkdiv');
+            
+            input.focus();
+            input.onkeyup = function(e) {
+                var text = input.value;
+                var domain = /(.*)\//.exec(text);
+
+                if (text == 'delete' || text == 'clear') {
+                    clean();
+                    addLink(true);
+                    return;
+                }
+
+                if (event.keyCode == 13) {
+                    addLink();
+                }
+
+                if(domain) {
+                    var text = text.replace(domain[0], '<span>' + domain[0] + '</span>')
+                }
+
+                div.innerHTML = text;
+            }
+
+            function addLink(remove) {
+                var history = document.getElementById('history');
+
+                if(remove) {
+                    history.innerHTML = '';
+                } else {
+                    console.log('currentHistory:', history.innerHTML, 'inputValue:', input.value)
+                    history.innerHTML = '<li>' + input.value + '</li>' + history.innerHTML;
+                }
+            }
+
+            function clean() {
+                input.value = '';
+                div.innerHTML = '';
+            }
+
+        </script>
+    </body>
+</html>     
