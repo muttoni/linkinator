@@ -2,7 +2,7 @@
 A better way to share links when presenting
 
 ## Demo
-[alt text](https://media.giphy.com/media/l378gVaWfDgDECtYk/giphy.gif "Linkinator Demo")
+![](https://media.giphy.com/media/l378gVaWfDgDECtYk/giphy.gif)
 
 ## Background
 As part of my job, I am on stage a lot and I often need to share short links with developers.
