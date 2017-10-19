@@ -1,6 +1,9 @@
 # Linkinator
 A better way to share links when presenting
 
+## Demo
+[alt text](https://github.com/muttoni/linkinator/raw/master/linkinator.gif "Linkinator Demo")
+
 ## Background
 As part of my job, I am on stage a lot and I often need to share short links with developers.
 Rather than add them to a PowerPoint (which is impracticle during live coding) or having to zoom in, I thought of a dedicated browser page that I could use that satisfied all of my requirements:
