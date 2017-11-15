@@ -8,9 +8,9 @@ A better way to share links when presenting
 As part of my job, I am on stage a lot and I often need to share short links with developers.
 Rather than add them to a PowerPoint (which is impracticle during live coding) or having to zoom in, I thought of a dedicated browser page that I could use that satisfied all of my requirements:
 
-1. It should be EXTREMELY visible -- black text on white background
-2. It should be EXTREMELY easy to use -- no fiddling with buttons or options
-3. It should be EXTREMELY integrated in my workflow -- the majority of my live coding happens in the browser so a pinned tab was the perfect thing.
+1. It should be extremely **visible** -- black text on white background
+2. It should be extremely **easy to use** -- no fiddling with buttons or options
+3. It should be extremely **integrated in my workflow** -- the majority of my live coding happens in the browser so a pinned tab was the perfect thing.
 
 The result is **Linkinator**.
 
