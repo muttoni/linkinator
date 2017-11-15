@@ -20,6 +20,6 @@ A dead easy way to share links/words with a crowd of people!
 
 1. Just save the `index.html` somewhere and bookmark it!
 2. Open the webpage and write in the input field at the top. Whatever you write will be replicated at the center of the screen
-3. If your link includes paths like 'bit.ly/hello', 'bit.ly/' will turn gray to emphasize the 'hello'.
-4. If you want to commit your link to the history, just hit <key>Enter</key>
-5. If you want to clear your history, just type out *clear* or *delete*.
+3. If your link includes paths like `bit.ly/hello`, `bit.ly/` will turn gray to emphasize the `hello`.
+4. If you want to commit your link to the history, just hit <kbd>Enter</kbg>
+5. If you want to clear your history, just type out `clear` or `delete`.
