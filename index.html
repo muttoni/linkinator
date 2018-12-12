@@ -91,7 +91,7 @@
             var div = document.getElementById('linkdiv');
             
             input.focus();
-            input.onkeyup = function(e) {
+            input.onkeyup = function(event) {
                 var text = input.value;
                 var domain = /(.*)\//.exec(text);
 
